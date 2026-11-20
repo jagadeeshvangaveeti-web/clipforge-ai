@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClipForge AI</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><div class="brand"><span class="logo">CF</span><div><b>ClipForge AI</b><small>GAMING SHORTS STUDIO</small></div></div><span class="pill">FREE · OPEN SOURCE</span></header>
+<main>
+<section class="hero"><p class="eyebrow">YOUR GAMING HIGHLIGHT FACTORY</p><h1>One video.<br><em>Five epic clips.</em></h1><p class="sub">Turn long gameplay into vertical Shorts with automatic highlight detection and captions.</p></section>
+<section class="panel">
+<div class="tabs"><button class="tab active" data-tab="link">YouTube link</button><button class="tab" data-tab="upload">Upload video</button></div>
+<form id="form">
+<div id="linkBox"><label for="url">Paste video URL</label><input id="url" name="source" type="url" placeholder="https://www.youtube.com/watch?v=..." /></div>
+<div id="uploadBox" hidden><label for="video">Choose a video file</label><input id="video" name="video" type="file" accept="video/*"></div>
+<div class="fine">Only process videos you own or have permission to use. Large videos need sufficient server storage and processing time.</div>
+<button class="primary" id="go" type="submit">✦ Generate 5 gaming clips</button>
+</form>
+<div id="status" role="status"></div>
+</section>
+<section id="results" hidden><div class="result-head"><div><p class="eyebrow">YOUR HIGHLIGHTS</p><h2>Ready to review</h2></div><span class="pill">5 CLIPS</span></div><div id="clips" class="clipgrid"></div></section>
+<section class="features"><div><b>01 / Auto highlights</b><p>Finds high-energy moments using audio peaks.</p></div><div><b>02 / Vertical format</b><p>Exports 1080 × 1920 MP4 Shorts.</p></div><div><b>03 / Captions</b><p>Optional local Whisper transcription for speech captions.</p></div></section>
+</main><footer>ClipForge AI · Built with open-source tools · No subscription</footer>
+<script src="/static/app.js"></script>
+</body></html>
